@@ -1,0 +1,56 @@
+.show-box{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0;
+  background: #eeeeee;
+}
+.wrapper{
+  position: relative;
+  width: 360rpx;
+  height: 360rpx;
+  background: #fff;
+}
+.show-box image{
+  width: 360rpx;
+  height: 360rpx;
+}
+.show-box .sign{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 1;
+}
+.choose-img-btn{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50rpx;
+}
+.choose-img-btn button{
+  width: 45%;
+}
+
+.choose-effect{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50rpx 0 80rpx;
+}
+.effect{
+  width: 45%;
+  text-align: center;
+  padding: 20rpx 0;
+  border: 1rpx solid #eeeeee;
+  margin: 20rpx 0;
+}
+.effect .active{
+  color: red;
+  border-color: red;
+}
+canvas{
+  position: fixed;
+  left: 600px;
+  width: 1080px;
+  height: 1080px;
+}

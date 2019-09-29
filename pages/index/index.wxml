@@ -1,0 +1,23 @@
+<view>
+  <view class="show-box">
+    <view class="wrapper">
+      <image class="avatar" src="{{avatarUrl}}"></image>
+      <image class="sign" src="../../images/{{active+1}}.png"></image>
+    </view>
+
+  </view>
+
+  <view class="choose-img-btn">
+    <button class="btn" type="primary" open-type="getUserInfo" bindgetuserinfo='getCurrentAvatar'>选择微信头像</button>
+    <button class="btn" type="primary" bindtap="chooseOtherImg">选择其他图片</button>
+  </view>
+
+  <view class="choose-effect">
+    <view class="effect" wx:for="{{[1,2,3,4]}}" wx:key="{{index}}" data-active="{{index}}" bindtap="chooseEffect" style="color:{{active===index?'red':'#000'}}">效果{{item}}</view>
+  </view>
+
+  <view>
+    <button type="primary" bindtap="buildAvatar">生成头像并保存</button>
+  </view>
+  <canvas canvas-id="canvas1"></canvas>
+</view>
